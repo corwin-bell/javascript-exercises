@@ -9,7 +9,10 @@ const convertToCelsius = function(tempF) {
 
 // formula of temp from Celsius to Fahrenheit
 // tempF = 9/5 * tempC + 32 
-const convertToFahrenheit = function() {
+const convertToFahrenheit = function(tempC) {
+  let tempF = tempC * 9/5 + 32;
+  let tempFrounded = Math.round(tempF * 10) / 10;
+  return tempFrounded;
 };
 
 // Do not edit below this line
